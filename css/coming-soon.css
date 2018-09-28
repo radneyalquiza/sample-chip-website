@@ -64,7 +64,7 @@ video {
   width: 100%;
   min-height: 50px;
   position: fixed;
-  top: 2rem;
+  top: 3.5rem;
   left: 0;
   z-index: 10;
   padding: 1rem;
@@ -82,13 +82,34 @@ video {
   padding: 2rem;
   font-size: 1.5rem;
   font-weight: 800;
+  margin-left: 2rem;
 }
 
 .menu .menu-container {
   margin: auto;
-  width: 80%;
+  width: 90%;
   padding: 1rem;
   background-color: transparent;
+}
+
+.menu .menuitems {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  text-align: right;
+}
+
+.slogan {
+  position: absolute;
+  z-index: 16;
+  top: 25%;
+  width: 64%;
+  margin: auto;
+  max-width: 64%;
+  color: white;
+  left: 50%;
+  margin-left: -32%;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .windshields {
@@ -96,11 +117,11 @@ video {
   height: 350px;
   position: absolute;
   top: 35%;
-  left: 24%;
+  left: 23%;
   background-color: white;
   z-index: 10;
-  -webkit-transform: skewX(-8deg);
-  transform: skewX(-8deg);
+  -webkit-transform: scale(0.9) skewX(-8deg);
+  transform: scale(0.9) skewX(-8deg);
   -webkit-transform-origin: top right;
   transform-origin: top right;
   border-top-left-radius: 3rem;
@@ -164,6 +185,82 @@ video {
   margin-right: -3rem;
 }
 
+.call-to-action {
+  position: fixed;
+  z-index: 16;
+  bottom: 5%;
+  width: 100%;
+}
+
+.call-to-action .container {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.call-to-action .book {
+  float: left;
+  width: 350px;
+  padding: 2rem;
+  margin-left: -2.5rem;
+}
+
+.call-to-action .book .book-btn {
+  min-width: 300px;
+  padding: 1rem 4rem 1rem 4rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #0080FF;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.call-to-action .nl {
+  text-align: left;
+  border-radius: 0.5rem;
+  color: white;
+  width: 500px;
+  float: right;
+  padding: 2rem;
+}
+
+.call-to-action .btn-secondary {
+  background-color: #0080FF;
+  border: none;
+  color: white;
+}
+
+.scroll-container {
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  width: 50px;
+  margin-left: -75px;
+  height: 50px;
+  margin-top: -25px;
+  z-index: 17;
+  color: white;
+  font-size: 2rem;
+}
+
+.bookform {
+  padding: 2rem;
+  position: absolute;
+  left: 250px;
+  top: 53%;
+  width: 350px;
+  min-height: 100px;
+  margin-left: -150px;
+  margin-top: -25%;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 18;
+}
+
+.form-group {
+  margin-bottom: 0.3rem;
+}
+
 .masthead {
   position: relative;
   overflow: hidden;
@@ -217,7 +314,7 @@ video {
   .masthead {
     height: 100%;
     min-height: 0;
-    width: 52%;
+    width: 54%;
     padding-bottom: 0;
   }
   .masthead .masthead-bg {
